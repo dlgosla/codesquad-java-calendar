@@ -4,12 +4,14 @@ import java.util.Scanner;
 
 public class Sum {
 	public static void main(String[] args) {
-		System.out.println("달을 입력하세요");
+		System.out.println("두 수를 입력하세요");
 		Scanner s = new Scanner(System.in);
-		int month = s.nextInt();
-		int[] maxDays = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30 ,31};
-		
-		System.out.println(month+"월은"+maxDays[month+1]+"일 까지 있습니다");
+		int a = s.nextInt();
+		int b = s.nextInt();
+
+		int sum = a+b;
+
+		System.out.println("두 수의 합은="+sum);
+
 	}
 }
-
